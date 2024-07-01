@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             windSpeedLoading.style.display = "block";
             weatherLoading.style.display = "block";
 
-            const apiKey = 'your token" ;
+            // const apiKey = 'your token" ;
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
             let response = await fetch(url);
             let data = await response.json();
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cityNameHeader.textContent = `Weather Dashboard for ${data.name}`;
 
             // Update weather image 
-            // updateWeatherImage(data.weather[0].main);
+            updateWeatherImage(data.weather[0].main);
             console.log("Weather data fetched successfully:", data);
 
         } catch (error) {
