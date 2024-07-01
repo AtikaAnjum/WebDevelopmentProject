@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/map.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+/* Styling for the weather container */
+.weather-container {
+    max-width: 960px;
+    height: 90vh;
+    margin: 50px auto; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    background: url('../images/icon3.jpg') no-repeat center center/cover; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for the weather header */
+.weather-header {
+    background-color: #80b5ed; 
+    color: #fff; 
+    padding: 20px; 
+    border-radius: 10px 10px 0 0; 
+}
+/* Styling for the main content area */
+.weather-body {
+    padding: 20px; 
+}
+
+/* Styling for weather cards */
+.weather-card {
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    padding-bottom:30px; 
+}
+
+/* Styling for weather images */
+.weather-image {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* Styling for the footer */
+.footer {
+    text-align: center; 
+    margin-top: 100px; 
+    margin-bottom: 0; 
+    padding: 10px 0; 
+    background-color: #6d96c1; 
+    color: #fff; 
+    border-radius: 0 0 10px 10px;
+}
+
+/* Styling for loading indicators */
+#temperature span.loading-indicator,
+#weather span.loading-indicator,
+#humidity span.loading-indicator,
+#wind-speed span.loading-indicator {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: block;
+}
