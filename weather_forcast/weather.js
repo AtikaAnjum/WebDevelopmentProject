@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             windSpeedLoading.style.display = "block";
             weatherLoading.style.display = "block";
 
-            const apiKey = '3311e16227c34165492acc31a63d8a05';
+            const apiKey = 'your token" ;
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
             let response = await fetch(url);
             let data = await response.json();
